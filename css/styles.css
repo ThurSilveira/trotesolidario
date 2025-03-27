@@ -1,0 +1,60 @@
+body { 
+    font-family: Arial, sans-serif; /* fonte*/
+    display: flex;   /* usa o FlexBlox para exibir o conteudo*/
+    justify-content: center; /* centraliza na horizontal*/
+    height: 100vh; /* altura da pagina é todo conteudo dela */
+    align-items: center; /* centraliza na vertical*/
+    background-color: #0060f5;
+}
+.container {
+    background-color: #ffb401;
+    padding: 20px; /*espaçamento interno*/
+    border-radius: 20px;
+    box-shadow: 8px 10px white;
+    text-align: center;
+}
+h2 {
+  padding: 5px;
+  color: white;
+  font-size: 28px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+  
+
+p {
+    border-radius: 5px;
+    color: white;
+    background: #0060f5;
+    padding: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+button {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: black;
+    padding: 9px;
+    border-radius: 20px;
+    cursor: pointer; /* mouse vira um ponteiro */
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+    background-color: #0060f5;
+    padding: 9px;
+    color: white;
+    cursor: pointer;
+}
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    cursor: default;
+}
+h5 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}

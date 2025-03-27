@@ -1,24 +1,36 @@
-<!DOCTYPE html>     <!-- identifica um documento html 5--> 
-<html lang="pt-br"> <!-- elemento raiz -->
-    <head> <!-- cabeça da página-->
-        <meta charset="UTF-8"> <!-- sistema de codificação portugues-->
-        <!-- página tera a largura do dispositivo-->
-        <meta name="viewport" content="width=device-width, initial-scale=.0"> 
-        <title>Profile Card</title>  <!-- titulo da página-->
-       <!-- fazendo o html ler o css-->
-       <!-- rel informa tipo de relação, folha de estilo-->
-       <!-- href informa o local do css-->
-       <link rel="stylesheet" href="css/styles.css"> </link>
-       <script src="js/scripts.js"></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trote Solidário - 2025</title>
+        <link rel="stylesheet" href="css/styles.css"/> <!-- liga o css -->
     </head>
-    <body> <!-- corpo da página-->
-        <div class="container">  <!-- divisão lógica-->
-            <img src="css/troteimg.jpg"/>
-            <h2> Arthur Silveira</h2>
-            <P> Engenharia de Software</P>
-            <h5> Uni-Facef 2025</h5>
-            <button onclick="mensagem()"> Seguir Perfil</button>
-
+    <body>
+        <header> <!-- cabeçalho do corpo da pagina--> 
+            Trote Solidário 2025 
+        </header>
+        <nav> <!--- barra de navegação (menu de opções)-->
+            <div class="links-menu">
+                <a href="index.html"> Home </a>
+                <a href="introducao.html"> Introdução </a>
+                <a href="objetivo.html"> Objetivo </a>
+                <a href="formato.html"> Formato </a>
+                <a href="gincana.html"> Gincana </a>
+                <a href="integracao.html"> Integração </a>
+                <a href="observacoes.html"> Observações </a>
+                <a href="calculadoras.html"> Calculadoras </a>  
+            </div>
+                <!-- class podemos reutilizar o estilho, id não -->
+                <!-- id não pode ser reutilizado pois só temos um elemento por id -->
+            <img src="images/trote.jpg" alt="Trote Solidário"/>
+        </nav>
+        <div class="container">
+            <h2> Trote Solidário 2025 </h2>
+            <p> Construa vitórias fora de campo e jogue pela solidariedade </p>
+            <p> Centro Universitário Municipal de Franca</p>
+            <p> Uni-FACEF </p>
+            <p> Franca-SP </p>
         </div>
     </body>
 </html>
