@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* espaçamento externo da pagina */
+    padding: 0; /* espaçamento intertno da pagina*/
+    background-color: #f4f4f4;
+    text-align: center; /* texto centralizado*/
+}
+
+header {
+    background-color: #ffb401;
+    color: white;
+    padding: 15px 0px; /* 15px (espaçamento interno acima e abaixo) e 0px (espaçamento direita e esquerda) */
+    font-size: 24px;
+}
+
+nav {
+    background: #0060f5;
+    padding: 10px; 
+    display: flex; /* flex boxing*/
+    justify-content: space-between; /*espaço ente os elementos do menu*/
+    align-items: center; /*alinhamento na vertical*/
+}
+
+.links-menu {
+    gap: 15px;  /*distancia entre os itens do menu*/
+    display: flex;
+}
+
+nav a { /*configura os links do menu*/
+    color: white;
+    text-decoration: none; /*n decora os links*/
+    padding: 10px 40px;
+    font-size: 18px;
+    background: #0191cd;
+    border-radius: 5px;
+}
+
+img {
+    width: 130px;
+    height: auto;
+    margin-right: 10px; /* espaçamento externo à direita */
+    border-radius: 10px;
+}
+
+.container {
+    width: 80%; /* largura de 80% da largura da página */
+    background: white;
+    border-radius: 10px;
+    /* espaçamento externo 20px acima e abaixo */
+    /* espaçamento externo auto à direita e à esquerda */
+    margin: 20px auto;
+    padding: 20px; /* espaçamento interno */ 
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: left;
+    text-indent: 3%;
+}
+
+h4{
+    text-indent: 3%;
+}
+ol li{
+    padding-bottom: 10px;
+}
+
+table tr td{
+    padding: 20px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+table{
+    margin: 0 auto;
+    width: 55%;
+}
+
+.azul{
+    background-color: #0060f5;
+    font-weight: bold; 
+    color: white;
+}
+
+.laranja {
+    background-color: orange;
+    font-weight: bold; 
+    color: white;
+}
+
+.preto {
+    background-color: black;
+    color: white;
+    font-weight: bold; 
+}
+
+.roxo {
+    background-color: purple;
+    font-weight: bold; 
+    color: white;
+}
+
+.verde {
+    background-color: green;
+    font-weight: bold; 
+    color: white;
+}
+
+.vermelho {
+    background-color: red;
+    font-weight: bold; 
+    color: white;
+}
+
+.container1 {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #0000;
+    padding: 8px;
+}
+
+.campos {
+    margin-bottom: 20px;
+}
+
+.tab2{
+    text-align: left;
+}
+
+
