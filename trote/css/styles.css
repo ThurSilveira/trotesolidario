@@ -123,7 +123,18 @@ table{
 }
 
 .container1 {
-    text-align: center;
+    text-align: left;
+    width: 20%;
+    height: auto;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.container2 {
+    text-align: left;
+    width: 50%;
+    height: auto;
+    margin: 20%;
 }
 
 th, td {
@@ -133,9 +144,5 @@ th, td {
 
 .campos {
     margin-bottom: 20px;
-}
-
-.tab2{
-    text-align: left;
 }
 
