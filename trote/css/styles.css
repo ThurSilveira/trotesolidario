@@ -53,15 +53,43 @@ img {
     text-align: justify;
 }
 
-#meio {
+.container1 {
+    width: 70%; 
+    background: whitesmoke;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: left;
+}
+
+.container1 h2 ul {
+    font-weight: normal;
+    color: black;
+    text-align: justify;
+}
+
+.meio {
     text-align: center;
-    margin: 2%;
+    
+}
+
+.meiotab {
+    align-items: center;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin: 20px, auto;
 }
 
 .tabela {
-   text-align: left;
-   width: auto;
-   height: auto;
+   text-align: center;
+   margin: 20px auto;
+   font-weight: normal;
+}
+
+.tabela tr td{
+    padding: 20px;
 }
 
 h1 {
@@ -84,17 +112,8 @@ ol li{
     padding-bottom: 10px;
 }
 
-table tr td{
-    padding: 20px;
-}
-
 p {
     text-indent: 30px;
-}
-
-table{
-    margin: 0 auto;
-    width: 55%;
 }
 
 .azul{
@@ -133,27 +152,6 @@ table{
     color: white;
 }
 
-.container1 {
-    text-align: left;
-    width: 20%;
-    height: auto;
-    align-items: center;
-    margin-left: 30%;
-}
-
-.container2 {
-    text-align: left;
-    width: 50%;
-    height: auto;
-    margin: 20%;
-}
-
-th, td {
-    border: 1px solid #0000;
-    padding: 8px;
-}
-
 .campos {
     margin-bottom: 20px;
 }
-
