@@ -53,6 +53,17 @@ img {
     text-align: justify;
 }
 
+#meio {
+    text-align: center;
+    margin: 2%;
+}
+
+.tabela {
+   text-align: left;
+   width: auto;
+   height: auto;
+}
+
 h1 {
     text-align: center;
 }
