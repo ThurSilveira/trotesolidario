@@ -1,9 +1,13 @@
 body {
     font-family: Arial, sans-serif;
+    font-weight: normal;
     margin: 0; /* espaçamento externo da pagina */
     padding: 0; /* espaçamento intertno da pagina*/
-    background-color: #f4f4f4;
-    text-align: center; /* texto centralizado*/
+    background-color: #f4f4f4; /* texto centralizado*/
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
 }
 
 header {
@@ -11,35 +15,62 @@ header {
     color: white;
     padding: 15px 0px; /* 15px (espaçamento interno acima e abaixo) e 0px (espaçamento direita e esquerda) */
     font-size: 24px;
+    text-align: center;
 }
 
 nav {
-    background: #0060f5;
-    padding: 10px; 
-    display: flex; /* flex boxing*/
-    justify-content: space-between; /*espaço ente os elementos do menu*/
-    align-items: center; /*alinhamento na vertical*/
-}
-
-.links-menu {
-    gap: 15px;  /*distancia entre os itens do menu*/
+    background-color: #0060f5; /* Cor de fundo do menu */
+    padding: 5px;
+    text-align: center;
+    position: sticky;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 nav a { /*configura os links do menu*/
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 12px 20px; /* Espaçamento dentro dos links */
+    margin: 0 15px; /* Espaçamento entre os links */
+    font-size: 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+nav a:hover {
+    background-color: #ffb401; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do link */
+}
+
+nav a.active {
+    background-color: #FFC107; /* Cor de fundo para o link ativo */
     color: white;
-    text-decoration: none; /*n decora os links*/
-    padding: 10px 40px;
-    font-size: 18px;
-    background: #0191cd;
-    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }
 
 img {
-    width: 130px;
+    width: 100px;
     height: auto;
     margin-right: 10px; /* espaçamento externo à direita */
     border-radius: 10px;
+}
+
+.links-menu {
+    gap: 60px;  /*distancia entre os itens do menu*/
+    display: flex;
 }
 
 .container {
@@ -50,70 +81,56 @@ img {
     /* espaçamento externo auto à direita e à esquerda */
     margin: 20px auto;
     padding: 20px; /* espaçamento interno */ 
-    text-align: justify;
-}
-
-.container1 {
-    width: 70%; 
-    background: whitesmoke;
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: left;
-}
-
-.container1 h2 ul {
     font-weight: normal;
-    color: black;
-    text-align: justify;
-}
-
-.meio {
-    text-align: center;
-    
-}
-
-.meiotab {
-    align-items: center;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
-    margin: 20px, auto;
 }
 
 .tabela {
-   text-align: center;
-   margin: 20px auto;
-   font-weight: normal;
+    width: 80%;
+    border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #fff;
+    
 }
 
-.tabela tr td{
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
+th, td {
+    padding: 12px 15px; /* Espaçamento dentro das células */
     text-align: left;
-    text-indent: 3%;
+    border: 1px solid #ddd; /* Linha de borda nas colunas */
 }
 
-h4{
-    text-indent: 3%;
+th {
+    background-color: blue; /* Cor de fundo do cabeçalho */
+    color: white;
 }
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor alternada para as linhas */
+}
+
+tr:hover {
+    background-color: #ddd; /* Cor de destaque quando passar o mouse */
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.caixa-texto {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    text-align: left;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
 ol li{
     padding-bottom: 10px;
-}
-
-p {
-    text-indent: 30px;
 }
 
 .azul{
@@ -154,4 +171,9 @@ p {
 
 .campos {
     margin-bottom: 20px;
+}
+
+p {
+    text-indent: 10%; 
+    font-size: larger;
 }
