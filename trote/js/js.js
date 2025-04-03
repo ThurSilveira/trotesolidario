@@ -28,24 +28,80 @@ function calcular(){
     // recupera oleo
     oleo = Number(document.getElementById("oleo").value)
     //calcular a soma
-    soma = mascote + homenagem + (2 * leite)  + (15 * suplemento) + (20 * sangue) + (5 * arroz5) + arroz1 + (2 * feijao2) + feijao1 + (0.5 * macarrao) + oleo
+    soma = mascote + homenagem + (2 * leite) + (20 * sangue) + (5 * arroz5) + arroz1 + (2 * feijao2) + feijao1 + (0.5 * macarrao) + oleo
     // retorna o valor ao html
     //template string
     equipes = document.getElementById("equipes").value
     if (equipes == "Laranja"){
-        if (kit >= 106){
-            soma = soma + 5000 + ((kit-106) * 30)
+        if (kit >= 106 && suplemento >= 53){
+            soma = soma + 5000 + ((kit-106) * 30) + ((suplemento-53) * 15) 
         }
-        else if (kit >= 85){
-            soma = soma + 4000 + ((kit-85) * 30)
+        else if (kit >= 85 && suplemento >= 42){
+            soma = soma + 4000 + ((kit-85) * 30) + ((suplemento-42) * 15) 
         }
-        else if (kit >= 53){
-            soma = soma + 2500 + ((kit-53) * 30)
+        else if (kit >= 53 && suplemento >= 27){
+            soma = soma + 2500 + ((kit-53) * 30) + ((suplemento-27) * 15) 
         }
-        else if (kit >= 21){
-            soma = soma + 1000 + ((kit-21) * 30)
+        else if (kit >= 21 && suplemento >= 11){
+            soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
+        }
+    } 
+    if (equipes == "Preto"){
+        if (kit >= 106 && suplemento >= 53){
+            soma = soma + 5000 + ((kit-106) * 30) + ((suplemento-53) * 15) 
+        }
+        else if (kit >= 85 && suplemento >= 42){
+            soma = soma + 4000 + ((kit-85) * 30) + ((suplemento-42) * 15) 
+        }
+        else if (kit >= 53 && suplemento >= 27){
+            soma = soma + 2500 + ((kit-53) * 30) + ((suplemento-27) * 15) 
+        }
+        else if (kit >= 21 && suplemento >= 11){
+            soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
         }
     }
+    if (equipes == "Roxo"){
+        if (kit >= 106 && suplemento >= 53){
+            soma = soma + 5000 + ((kit-106) * 30) + ((suplemento-53) * 15) 
+        }
+        else if (kit >= 85 && suplemento >= 42){
+            soma = soma + 4000 + ((kit-85) * 30) + ((suplemento-42) * 15) 
+        }
+        else if (kit >= 53 && suplemento >= 27){
+            soma = soma + 2500 + ((kit-53) * 30) + ((suplemento-27) * 15) 
+        }
+        else if (kit >= 21 && suplemento >= 11){
+            soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
+        }
+    }
+    if (equipes == "Verde"){
+        if (kit >= 106 && suplemento >= 53){
+            soma = soma + 5000 + ((kit-106) * 30) + ((suplemento-53) * 15) 
+        }
+        else if (kit >= 85 && suplemento >= 42){
+            soma = soma + 4000 + ((kit-85) * 30) + ((suplemento-42) * 15) 
+        }
+        else if (kit >= 53 && suplemento >= 27){
+            soma = soma + 2500 + ((kit-53) * 30) + ((suplemento-27) * 15) 
+        }
+        else if (kit >= 21 && suplemento >= 11){
+            soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
+        }
+    }
+    if (equipes == "Vermelho"){
+        if (kit >= 106 && suplemento >= 53){
+            soma = soma + 5000 + ((kit-106) * 30) + ((suplemento-53) * 15) 
+        }
+        else if (kit >= 85 && suplemento >= 42){
+            soma = soma + 4000 + ((kit-85) * 30) + ((suplemento-42) * 15) 
+        }
+        else if (kit >= 53 && suplemento >= 27){
+            soma = soma + 2500 + ((kit-53) * 30) + ((suplemento-27) * 15) 
+        }
+        else if (kit >= 21 && suplemento >= 11){
+            soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
+        }
+    }          
 
     document.getElementById("soma").innerHTML = `A soma é ${soma}`
 }
