@@ -46,7 +46,7 @@ function calcular(){
             soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
         }
         if (sangue >= 53){
-            soma = soma + 2500 - ((sangue-53) * 20)
+            soma = soma + 2500 + ((sangue-53) * 20)
         }
         else{
             soma = soma + (sangue * 20)
@@ -65,6 +65,12 @@ function calcular(){
         else if (kit >= 21 && suplemento >= 10){
             soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-10) * 15) 
         }
+        if (sangue >= 52){
+            soma = soma + 2500 + ((sangue-52) * 20)
+        }
+        else{
+            soma = soma + (sangue * 20)
+        }
         
     }
     else if (equipes == "Roxo"){
@@ -80,6 +86,12 @@ function calcular(){
         else if (kit >= 21 && suplemento >= 11){
             soma = soma + 1000 + ((kit-21) * 30) + ((suplemento-11) * 15) 
         }
+        if (sangue >= 53){
+            soma = soma + 2500 + ((sangue-53) * 20)
+        }
+        else{
+            soma = soma + (sangue * 20)
+        }
     }
     else if (equipes == "Verde"){
         if (kit >= 89 && suplemento >= 45){
@@ -94,6 +106,12 @@ function calcular(){
         else if (kit >= 18 && suplemento >= 9){
             soma = soma + 1000 + ((kit-18) * 30) + ((suplemento-9) * 15) 
         }
+        if (sangue >= 45){
+            soma = soma + 2500 + ((sangue-45) * 20)
+        }
+        else{
+            soma = soma + (sangue * 20)
+        }
     }
     else {
         if (kit >= 92 && suplemento >= 46){
@@ -107,6 +125,12 @@ function calcular(){
         }
         else if (kit >= 18 && suplemento >= 9){
             soma = soma + 1000 + ((kit-21) * 18) + ((suplemento-9) * 15) 
+        }
+        if (sangue >= 46){
+            soma = soma + 2500 + ((sangue-46) * 20)
+        }
+        else{
+            soma = soma + (sangue * 20)
         }
     }       
     
