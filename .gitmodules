@@ -1,0 +1,3 @@
+[submodule "submodule/cardtrote"]
+	path = submodule/cardtrote
+	url = https://github.com/ThurSilveira/cardtrote
