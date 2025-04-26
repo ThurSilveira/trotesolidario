@@ -2,7 +2,7 @@ function calcular(){
     // vamos criar duas variaveis
     // JS as variaveis nao possuem tipo
     // let variavel
-    let mascote, homenagem, kit, suplemento, sangue, arroz5, arroz1, feijao2, feijao1, macarrao, oleo, soma, equipes
+    let mascote, homenagem, kit, suplemento, sangue, arrozc, arroz1, feijao2, feijao1, macarrao, oleo, soma, equipes
     // recupera o valor do mascote digitado pelo usuario
     mascote = Number(document.getElementById ("mascote").value)
     // recupera o valor da homenagem digitado pelo usuario
@@ -16,7 +16,7 @@ function calcular(){
     //recuperar a soma sangue adicional
     sangue = Number(document.getElementById("sangue").value)
     // recuperar a soma arroz 5 avulso
-    arroz5 = Number(document.getElementById("arroz5").value) 
+    arrozc = Number(document.getElementById("arrozc").value) 
     //recupera valor arroz 1 avulso
     arroz1 = Number(document.getElementById("arroz1").value)
     //recupera valor feijao 2 avulso
@@ -28,7 +28,7 @@ function calcular(){
     // recupera oleo
     oleo = Number(document.getElementById("oleo").value)
     //calcular a soma
-    soma = mascote + homenagem + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (leite * 2)
+    soma = mascote + homenagem + (arroz1 * 1) + (arrozc * 5) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (leite * 2)
 
     // retorna o valor ao html
     //template string
@@ -52,10 +52,7 @@ function calcular(){
         else{
             soma = soma + (sangue * 20)
         }
-        if (arroz5 > 0) {
-            soma += arroz5 * 5;
-        }
-
+        
     } 
     else if (equipes == "Preto"){
         if (kit >= 104 && suplemento >= 52){
@@ -140,4 +137,8 @@ function calcular(){
     }       
     
     document.getElementById("soma").innerHTML = `A soma é ${soma}`
+}
+
+function cardtrote() {
+    window.location.href = 'https://thursilveira.github.io/cardtrote/';
 }

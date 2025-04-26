@@ -169,3 +169,15 @@ p {
     font-size: larger;
 }
 
+#bcard {
+    justify-content: center;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 20px; 
+    margin: 20px auto;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    
+}
