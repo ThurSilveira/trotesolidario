@@ -16,7 +16,7 @@ function calcular(){
     //recuperar a soma sangue adicional
     sangue = Number(document.getElementById("sangue").value)
     // recuperar a soma arroz 5 avulso
-    arroz5 = Number(document.getElementById("arroz5").value)
+    arroz5 = Number(document.getElementById("arroz5").value) 
     //recupera valor arroz 1 avulso
     arroz1 = Number(document.getElementById("arroz1").value)
     //recupera valor feijao 2 avulso
@@ -28,7 +28,8 @@ function calcular(){
     // recupera oleo
     oleo = Number(document.getElementById("oleo").value)
     //calcular a soma
-    soma = mascote + homenagem 
+    soma = mascote + homenagem + (arroz5 * 5) + (arroz1 * 1) + (feijao2 * 2) + (feijao1 * 1) + (macarrao * 0.5) + (oleo * 1) + (leite * 2)
+
     // retorna o valor ao html
     //template string
     equipes = document.getElementById("equipes").value
@@ -51,6 +52,10 @@ function calcular(){
         else{
             soma = soma + (sangue * 20)
         }
+        if (arroz5 > 0) {
+            soma += arroz5 * 5;
+        }
+
     } 
     else if (equipes == "Preto"){
         if (kit >= 104 && suplemento >= 52){
