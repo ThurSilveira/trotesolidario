@@ -140,5 +140,5 @@ function calcular(){
 }
 
 function cardtrote() {
-    window.location.href = 'https://thursilveira.github.io/trotesolidario/';
+    window.location.href = 'https://thursilveira.github.io/cardtrote/';
 }
