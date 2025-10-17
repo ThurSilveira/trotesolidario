@@ -1,5 +1,5 @@
 function mensagem() {
-     alert('Agora voçê esta me seguindo')
+     alert('Agora você esta me seguindo')
 }
 
 function returnn () {
