@@ -2,13 +2,10 @@
 body {
     font-family: Arial, sans-serif;
     font-weight: normal;
-    margin: 0; /* espaçamento externo da pagina */
-    padding: 0; /* espaçamento intertno da pagina*/
-    background-color: #f4f4f4; /* texto centralizado*/
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    min-height: 100vh;
 }
 
 header {
@@ -24,18 +21,19 @@ nav {
     padding: 5px;
     text-align: center;
     position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    gap: 16px;
+    z-index: 1;
 }
 
 nav a { /*configura os links do menu*/
     color: white; /* Cor do texto */
     text-decoration: none; /* Remove sublinhado */
-    padding: 12px 20px; /* Espaçamento dentro dos links */
-    margin: 0 15px; /* Espaçamento entre os links */
-    font-size: 20px;
+    padding: 10px 12px; /* Espaçamento dentro dos links */
+    font-size: 17px;
     border-radius: 5px; /* Bordas arredondadas */
     transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Transições suaves */
 }
@@ -60,12 +58,16 @@ img {
 }
 
 .links-menu {
-    gap: 60px;  /*distancia entre os itens do menu*/
+    gap: 4px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container {
     width: 80%; /* largura de 80% da largura da página */
+    max-width: 1100px;
+    box-sizing: border-box;
     background: white;
     border-radius: 10px;
     /* espaçamento externo 20px acima e abaixo */
@@ -169,15 +171,50 @@ p {
     font-size: larger;
 }
 
-#bcard {
-    justify-content: center;
+.titulo-principal {
+    background-color: aquamarine;
+    margin: 20px auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.botao-card {
     background-color: aquamarine;
     border-radius: 10px;
-    padding: 20px; 
+    color: #000;
+    padding: 20px;
     margin: 20px auto;
     width: 200px;
+    box-sizing: border-box;
     font-size: 20px;
     font-weight: bold;
     display: flex;
-    
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao-card:hover {
+    background-color: #ffb401;
+}
+
+@media (max-width: 760px) {
+    nav {
+        position: static;
+        flex-direction: column-reverse;
+    }
+
+    nav img {
+        margin: 5px auto;
+    }
+
+    .container,
+    .tabela,
+    .caixa-texto {
+        width: 94%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
 }

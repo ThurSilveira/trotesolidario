@@ -2,7 +2,7 @@ function calcular(){
     // vamos criar duas variaveis
     // JS as variaveis nao possuem tipo
     // let variavel
-    let mascote, homenagem, kit, suplemento, sangue, arrozc, arroz1, feijao2, feijao1, macarrao, oleo, soma, equipes
+    let mascote, homenagem, leite, kit, suplemento, sangue, arrozc, arroz1, feijao2, feijao1, macarrao, oleo, soma, equipes
     // recupera o valor do mascote digitado pelo usuario
     mascote = Number(document.getElementById ("mascote").value)
     // recupera o valor da homenagem digitado pelo usuario
@@ -136,9 +136,5 @@ function calcular(){
         }
     }       
     
-    document.getElementById("soma").innerHTML = `A soma é ${soma}`
-}
-
-function cardtrote() {
-    window.location.href = 'https://thursilveira.github.io/cardtrote/';
+    document.getElementById("soma").textContent = `A soma é ${soma}`
 }
